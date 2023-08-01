@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 export default function Navbar() {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
@@ -16,7 +16,7 @@ export default function Navbar() {
       <div
         className={
           nav
-            ? "fixed ease-in duration-500 text-gray-200 left-0 top-0 w-full h-screen bg-black/75  px-4 py-7 flex flex-col z-10"
+            ? "fixed ease-in duration-500 text-gray-200 left-0  top-0 w-full h-screen bg-black/75  px-4 py-7 flex flex-col z-10"
             : "absolute ease-in duration-300  left-[-100%] top-0 "
         }
       >
